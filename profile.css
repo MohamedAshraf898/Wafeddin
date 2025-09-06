@@ -65,10 +65,17 @@ img{max-width:100%;display:block}
   .avatar{width:100px;height:100px}
   .profile-header{flex-direction:column;align-items:center;padding:10px !important}
   .grid{grid-template-columns:1fr}
-  .footer__text{font-size:12px}
+  .footer__inner{flex-direction:row-reverse}
+  .footer__text{font-size:12px;text-align:center}
+  .site-footer{
+    padding: 10px !important;
+  }
 }
 
 /* Footer (reuse style) */
 .site-footer{background:#2b57df;color:#fff;margin-top:0}
-.footer__inner{padding:20px 0}
-.footer__text{margin:0;text-align:center;font-weight:500}
+.footer__inner{padding:20px 0;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-direction:row-reverse}
+.footer__text{margin:0;font-weight:500}
+.footer__social{display:flex;gap:14px;justify-content:center;margin:0}
+.footer__social a{color:#fff;opacity:.9;text-decoration:none}
+.footer__social a:hover{opacity:1}
