@@ -32,6 +32,24 @@ img{max-width:100%;display:block}
 .meta{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .meta li{display:flex;align-items:center;gap:8px;font-size:12px;color:#fff}
 
+/* Shipment state chips */
+.state{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:999px;font-size:11px;font-weight:600}
+.state--pending{background:rgba(255,193,7,.2);color:#ffd67a}
+.state--processing{background:rgba(58,102,255,.2);color:#cfe0ff}
+.state--shipped{background:rgba(40,167,69,.25);color:#b9f6c3}
+
+/* Status checkbox indicator (admin-only control, disabled for users) */
+.status-toggle{display:inline-flex;align-items:center;gap:8px;opacity:1}
+.status-toggle input{position:absolute;opacity:0;pointer-events:none}
+.status-indicator{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:6px;background:rgba(255,0,0,.15);color:#ff6b6b;font-weight:800;line-height:1}
+/* unchecked shows red X */
+.status-indicator::before{content:'×'}
+/* checked shows green check */
+.status-toggle input:checked + .status-indicator{background:rgba(46,204,113,.2);color:#2ecc71}
+.status-toggle input:checked + .status-indicator::before{content:'✓'}
+/* visually hidden text for screen readers */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
 /* Gallery section */
 .gallery{padding:28px 0}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
@@ -44,8 +62,10 @@ img{max-width:100%;display:block}
   .grid{grid-template-columns:repeat(2,1fr)}
 }
 @media (max-width:640px){
+  .avatar{width:100px;height:100px}
   .profile-header{flex-direction:column;align-items:center;padding:10px !important}
   .grid{grid-template-columns:1fr}
+  .footer__text{font-size:12px}
 }
 
 /* Footer (reuse style) */

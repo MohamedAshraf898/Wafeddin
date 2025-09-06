@@ -58,6 +58,42 @@ body{
 }
 .field input::placeholder{color:#a0a8c0}
 
+/* File input styling */
+.field input[type=file]{
+  padding:0 14px;
+  height:44px;
+  line-height:44px;
+  background:#f6f7fb;
+  color:#0f1b3d;
+  font-size:14px;
+  cursor:pointer
+}
+.field input[type=file]::file-selector-button{
+  margin-right:10px;
+  height:36px;
+  padding:0 12px;
+  border:none;
+  border-radius:8px;
+  background:#e3e8ff;
+  color:#0f1b3d;
+  font-weight:600;
+  cursor:pointer
+}
+/* Safari */
+.field input[type=file]::-webkit-file-upload-button{
+  margin-right:10px;
+  height:36px;
+  padding:0 12px;
+  border:none;
+  border-radius:8px;
+  background:#e3e8ff;
+  color:#0f1b3d;
+  font-weight:600;
+  cursor:pointer
+}
+.field input[type=file]::file-selector-button:hover,
+.field input[type=file]::-webkit-file-upload-button:hover{background:#d7defe}
+
 .toggle{
   position:absolute;
   top:50%;

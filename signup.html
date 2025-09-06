@@ -25,13 +25,13 @@
 
     <h1 class="title">Sign Up</h1>
 
-    <form class="form" action="#" method="post" novalidate>
-      <label class="label" for="email">Email</label>
+    <form class="form" action="#" method="post" novalidate enctype="multipart/form-data">
+      <label class="label" for="email">Email <br> البريد الإلكتروني</label>
       <div class="field">
         <input id="email" name="email" type="email" placeholder="username@gmail.com" required>
       </div>
 
-      <label class="label" for="password">Password</label>
+      <label class="label" for="password">Password <br> باسورد</label>
       <div class="field">
         <input id="password" name="password" type="password" placeholder="Password" required>
         <button class="toggle" type="button" aria-label="Show password" data-toggle="password">
@@ -43,23 +43,29 @@
       </div>
 
       
-      <label class="label" for="name">Name in arabic (Like in your passport)</label>
+      <label class="label" for="name">Name in arabic (Like in your passport) <br> أسمك بالعربي مثل الباسبور</label>
       <div class="field">
         <input id="name" name="name" type="name" placeholder="Name in arabic (Like in your passport)" required>
       </div>
 
-      <label class="name-en" for="name-en">Name in english (Like in your passport)</label>
+      <label class="name-en" for="name-en">Name in english (Like in your passport) <br> أسمك بالانجليزي مثل الباسبور</label>
       <div class="field">
         <input id="name-en" name="name-en" type="name" placeholder="Name in english (Like in your passport)" required>
       </div>
-      <label class="label" for="whatsapp-number">Whatsapp Number</label>
+      <label class="label" for="whatsapp-number">Whatsapp Number <br> رقم الواتساب</label>
       <div class="field">
         <input id="whatsapp-number" name="whatsapp-number" type="whatsapp-number" placeholder="Whatsapp Number" required>
       </div>
-      <label class="label" for="Inspection-number">Inspection Number</label>
+      <label class="label" for="Inspection-number">Inspection Number <br> رقم الكشف</label>
       <div class="field">
         <input id="Inspection-number" name="Inspection-number" type="Inspection-number" placeholder="Inspection Number" required>
       </div>
+
+      <label class="label" for="avatar">Profile Photo <br> صورة الملف الشخصي</label>
+      <div class="field">
+        <input id="avatar" name="avatar" type="file" accept="image/*">
+      </div>
+
       <a class="btn-submit" href="home.html">Sign Up</a>
       <p class="hint">You have an account? <a href="login.html">Login Now</a></p>
     </form>

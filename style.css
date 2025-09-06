@@ -193,4 +193,6 @@ justify-content: center;
   .hero__copy p{font-size:15px}
   .hero__actions .btn--primary{width:100%;max-width:none;height:44px}
   .hero__media{max-width:100%}
+  .footer__text{font-size:12px}
+
 }
