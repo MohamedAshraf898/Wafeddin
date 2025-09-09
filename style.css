@@ -231,13 +231,14 @@ justify-content: center;
   }
   .logo
   {
-    width: 75px;
+    width: 65px;
     height: 40px;
   }
   .btn--pill {
-    width: 75px;
-    height: 40px;
-    font-size: 10px;
+    width: 65px;
+    height: 30px;
+    font-size: 12px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
