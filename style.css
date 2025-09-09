@@ -59,6 +59,21 @@ justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
+  width: 100%;
+  position: sticky;
+  top: 10px;
+  z-index: 100;
+}
+.hero__top::after{
+  content: '';
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.07);
+  filter: blur(1px);
+
 }
 .logo {
   display: flex;
@@ -212,6 +227,20 @@ justify-content: center;
   .site-footer{padding:10px !important}
   .hero__content{
     display: flex;
+    gap: 0px;
     flex-direction: column-reverse;
+  }
+  .logo
+  {
+    width: 75px;
+    height: 40px;
+  }
+  .btn--pill {
+    width: 75px;
+    height: 40px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
