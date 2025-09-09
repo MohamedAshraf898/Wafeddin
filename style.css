@@ -222,7 +222,7 @@ justify-content: center;
   .hero__actions .btn--primary{width:100%;max-width:none;height:44px}
   .hero__media{max-width:100%}
   .footer__inner{flex-direction:row-reverse}
-  .footer__text{font-size:12px;text-align:center}
+  .footer__text{font-size:9px;text-align:center}
   .site-footer{padding:10px !important}
   .hero__content{
     display: flex;
