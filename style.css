@@ -78,6 +78,9 @@ justify-content: center;
   align-items: center;
   gap: 8px;
 }
+.logo:hover{
+  cursor: pointer;
+}
 .logo__mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:6px;background:#fff;color:#2b57df;font-weight:800}
 .logo__text{font-weight:700}
 .logo img{height:46px;width:auto;display:block}
