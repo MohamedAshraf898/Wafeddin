@@ -87,22 +87,25 @@ justify-content: center;
 
 .hero__content{
     display:grid;
-    grid-template-columns:1.2fr .9fr;
+    grid-template-columns:1fr 1.5fr;
     gap:32px;
     align-items:center;
     margin-top: 100px;
 }
+
 .hero__media{
-    border-radius:8px;
+  position: relative;
+  left: 100px;
+    border-radius:0px;
     overflow:hidden;
     width:100%;
-    max-width:480px;
+    max-width: 700px;
     aspect-ratio:1/1;
-    background-image: url(./assets/images/freepik__background__52897.png);
+    background-image: url(./assets/images/bb.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
+    justify-self: end;
 }
 .heero__media::after{
     content: '';
@@ -134,7 +137,7 @@ justify-content: center;
     margin: 0 0 18px;
 }
 .hero__actions{display:flex;gap:12px;align-items:center}
-.hero__actions .btn--primary{width:183px;height:40px}
+.hero__actions .btn--primary{width:210px;height:40px}
 
 /* Cards section */
 .cards{
@@ -222,8 +225,16 @@ justify-content: center;
   .info-card__media{width:100%;height:300px}
   .hero__copy h1{font-size:24px}
   .hero__copy p{font-size:15px}
-  .hero__actions .btn--primary{width:100%;max-width:none;height:44px}
-  .hero__media{max-width:100%}
+  .hero__actions .btn--primary{width:60%;height:44px}
+  .hero__media{
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 0px;
+    top: 40px;
+  }
   .footer__inner{flex-direction:row-reverse}
   .footer__text{font-size:9px;text-align:center}
   .site-footer{padding:10px !important}
